@@ -1,0 +1,110 @@
+<!doctype html>
+
+<html>
+<head>
+    <title>My first page</title>
+    <meta name = "author" content = "Veron">
+   
+    <!-- External Styling-->
+<link rel="stylesheet" type = "text/css"  ref="Style.css">
+    <!-- INTERNAL STYLING-->
+    <style>
+        table{
+            background-color: aqua; 
+            min-width: 100%; 
+        }
+        
+        table > thead {
+            font-size :8rem;
+        }
+    </style>
+<!-- Pixels & percentage are absolute, Rem is adjustable to the Windows or responsive,  -->
+<!-- table > thead a child of table-->
+<!--a "min-width" so you don't make it smaller that it is expected to be -->
+
+<script src = "index.js"></script>
+
+</head>
+<body bgcolor = "lime">
+    <center>
+     <header style = "background-color: bisque; color: blueviolet; padding-top : 20px" > 
+        <h1> Welcome to My first Page</h1>
+        <h2> Heading 2 </h2>
+        <h3> Heading 3 </h3>
+        <h4> Heading 4 </h4>
+    </header>
+    </center>
+<table border = "1">
+    <thead>
+       <th> Name </th>
+       <th> Address </th>
+       <th> Phone Number </th>
+    </thead>
+    <tbody>
+        <tr> 
+            <td> Marie</td>
+            <td> New York</td>
+            <td> 555 - 555 - 5555</td>
+        </tr>
+        <tr> 
+            <td> Marie</td>
+            <td> New York</td>
+            <td> 555 - 555 - 5555</td>
+        </tr>
+       
+    </tbody>
+   
+    <tfoot>
+        <tr><td>Table Footer</td></tr> <!-- Taking out the <td> makes it got on top and not apart of the table-->
+    </tfoot>
+</table>
+
+
+<!-- Unorder List-->
+<ul class = "Countries">
+    <li>
+        The United States
+    </li><li>
+        Panama
+    </li><li>
+        Canada
+    </li><li>
+        Uragway
+    </li>
+</ul>
+<ol> <!--Order List -->
+    <li>Strawberry </li>
+    <li>Banana</li>
+    <li>Cherry</li>
+    <li>Orange</li>
+</ol>
+<!-- Addding an image from the browser by copying the link -->
+<img src = "https://th.bing.com/th/id/R.5b2b65c390263761e8089fe42c617512?rik=Krk%2bsJW%2baIUIWw&riu=http%3a%2f%2fimages5.fanpop.com%2fimage%2fphotos%2f28000000%2frandomised-random-28065165-1024-819.jpg&ehk=5EwtKjhNaCpv2WoxrGQ6hQfUGbEnlkAb3g5OZSIKIhc%3d&risl=&pid=ImgRaw&r=0" alt = "Flow and Energy"/ width = "100", height = "100">
+
+
+
+<canvas id="myCanvas" width="200" height="100"></canvas>
+<script>
+    var c = document.getElementById("myCanvas");
+    var ctx = c.getContext("2d");
+    
+    // Create gradient
+    var grd = ctx.createRadialGradient(75, 50, 5, 90, 60, 100);
+    grd.addColorStop(0, "red");
+    grd.addColorStop(1, "white");
+    
+    // Fill with gradient
+    ctx.fillStyle = grd;
+    ctx.fillRect(10, 10, 150, 80);
+    </script>
+    <div>
+        <p>This is a paragraph</p>
+    </div>
+
+    <hr/>
+   
+    <footer>
+
+    </footer>
+</body>
+</html>

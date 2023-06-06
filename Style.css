@@ -1,0 +1,9 @@
+body {
+    font-weight: bolder; 
+}
+.countries{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+#usa {
+    background-color: blue;
+}
